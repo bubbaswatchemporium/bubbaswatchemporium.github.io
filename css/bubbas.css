@@ -1,0 +1,36 @@
+/* Custom font */
+@font-face {
+    font-family: "HanleyProSans";
+    src: url("../fonts/Hanley-Pro-Sans.otf") format("opentype");
+}
+hr {
+    width: "500px"; 
+    color: "red";
+    size: "10";
+}
+.main-logo {
+    font-family: "HanleyProSans";
+    font-size: 2vw;
+    padding-top: 1rem;
+}
+.navbar {
+    font-family: "HanleyProSans";
+    font-size: 0.7vw;
+}
+.content {
+    font-family: "HanleyProSans";
+    text-align: center;
+}
+.product {
+    padding: 1rem;
+}
+.product-name {
+    padding-top: 1rem;
+}
+.product-img {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: grey;
