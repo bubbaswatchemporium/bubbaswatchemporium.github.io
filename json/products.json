@@ -1,0 +1,144 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "brand": "Hamilton",
+            "model": "Khaki Field",
+            "movement": "Automatic",
+            "size": "38mm",
+            "price": "$-",
+            "thumbnail": "images/hamilton-khaki-field-front-cropped.png",
+            "age": "Modern"
+        },
+        {
+            "id": 2,
+            "brand": "Dan Henry",
+            "model": "\"Evil Nina\" 1962",
+            "movement": "Mechaquartz",
+            "size": "39mm",
+            "price": "$-",
+            "thumbnail": "images/dan-henry-1962-front-cropped.png",
+            "age": "Modern"
+        },
+        {
+            "id": 3,
+            "brand": "Seiko",
+            "model": "\"Asymmetrical\" 8123-7269",
+            "movement": "Quartz",
+            "size": "38mm",
+            "price": "$-",
+            "thumbnail": "images/seiko-asymmsetrical-front-cropped.png",
+            "age": "Vintage"
+        },
+        {
+            "id": 4,
+            "brand": "Buler",
+            "model": "Astromaster",
+            "movement": "Handwind",
+            "size": "39mm",
+            "price": "$-",
+            "thumbnail": "images/buler-astromaster-front-cropped.png",
+            "age": "Vintage"
+        },
+        {
+            "id": 5,
+            "brand": "Longines",
+            "model": "Conquest Day-Date",
+            "movement": "Quartz",
+            "size": "38mm",
+            "price": "$-",
+            "thumbnail": "images/longines-conquest-front-cropped.png",
+            "age": "Vintage"
+        },
+        {
+            "id": 6,
+            "brand": "Seiko",
+            "model": "SNXA09 (7S26-0430)",
+            "movement": "Automatic",
+            "size": "37mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 7,
+            "brand": "Le Monde",
+            "model": "\"Lolipop\" Skin Diver",
+            "movement": "Handwind",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 8,
+            "brand": "Omega",
+            "model": "\"Pre-Bond\" Seamaster 200m (396.1061)",
+            "movement": "Quartz",
+            "size": "40mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 9,
+            "brand": "Bulova",
+            "model": "American Clipper",
+            "movement": "Automatic",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 10,
+            "brand": "Tag Heuer",
+            "model": "Professional 2000 (974.006)",
+            "movement": "Quartz",
+            "size": "38mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 11,
+            "brand": "Seiko",
+            "model": "SKXW26 (7S26-3200)",
+            "movement": "Automatic",
+            "size": "37mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 12,
+            "brand": "Nivada Grenchen",
+            "model": "F2",
+            "movement": "Handwind",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 13,
+            "brand": "Rado",
+            "model": "Diastar",
+            "movement": "Automatic",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        },
+        {
+            "id": 14,
+            "brand": "Bulova",
+            "model": "Watertite",
+            "movement": "Handwind",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "",
+            "age": "Vintage"
+        }
+    ]
+}

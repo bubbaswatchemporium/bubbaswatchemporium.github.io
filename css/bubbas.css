@@ -1,21 +1,46 @@
-/* Custom font */
+/* Custom fonts */
 @font-face {
     font-family: "HanleyProSans";
     src: url("../fonts/Hanley-Pro-Sans.otf") format("opentype");
 }
+@font-face {
+    font-family: "HanleyProBlock";
+    src: url("../fonts/Hanley-Pro-Block.otf") format("opentype");
+}
+@font-face {
+    font-family: "HanleyProBlockInline";
+    src: url("../fonts/Hanley-Pro-Block-Inline.otf") format("opentype");
+}
+@font-face {
+    font-family: "HanleyProSlimBold";
+    src: url("../fonts/Hanley-Pro-Slim-Bold.otf") format("opentype");
+}
+
+/* Styling */
+body {
+    background-color: white !important;
+    width: 100vw !important;
+    position: absolute !important;
+    
+}
 hr {
-    width: "500px"; 
-    color: "red";
-    size: "10";
+    margin: 0 !important;
+    padding-bottom: 1rem !important;
 }
 .main-logo {
-    font-family: "HanleyProSans";
-    font-size: 2vw;
-    padding-top: 1rem;
+    max-width: 50%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 .navbar {
     font-family: "HanleyProSans";
-    font-size: 0.7vw;
+    font-size: 0.8vw;
+}
+.navlink {
+    cursor: pointer;
+}
+.navlink:hover {
+    text-decoration: underline !important;
 }
 .content {
     font-family: "HanleyProSans";
@@ -25,12 +50,14 @@ hr {
     padding: 1rem;
 }
 .product-name {
+    font-family: "HanleyProSlimBold";
+    font-size: 1vw;
+    padding-top: 1rem;
+}
+.brand-name {
+    font-family: "HanleyProSans";
     padding-top: 1rem;
 }
 .product-img {
-    width: 10rem;
-    height: 10rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: grey;
+    max-width: 20vw !important;
+}
