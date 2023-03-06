@@ -165,4 +165,5 @@ function resetFilter(products) {
     document.querySelector("#vintageWatches").style.textDecoration = "none";
     document.querySelector("#modernWatches").style.textDecoration = "none";
     document.querySelector("#watchParts").style.textDecoration = "none";
+    window.scrollTo(0, 0);
 }

@@ -30,7 +30,7 @@
                 <div class="row">
                     <span id="size"></span>
                 </div>
-                <div class="row brand-name">
+                <div class="row brand-name price">
                     <span id="price"></span>
                 </div>
             </div>
@@ -46,10 +46,11 @@
                 <div class="row logo-container">
                     <div class="col"></div>
                     <div class="col-6 d-flex">
-                        <img class="main-logo mx-auto" src="images/bubbas-logo.png">
+                        <img class="main-logo mx-auto" src="images/bubbas-logo-white.png">
                     </div>
                     <div class="col"></div>
                 </div>
+                <hr>
                 <!-- Navbar -->
                 <nav class="row">
                     <div class="col"></div>
@@ -74,6 +75,9 @@
                     <div class="col-1 d-flex">
                         <h5 class="navbar mx-auto navlink" id="watchParts" onclick='filter("parts")'>PARTS</h5>
                     </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink"><a href="custom.html" style="color: white">CUSTOM</a></h5>
+                    </div>
                     <div class="col"></div>
                 </nav>
                 <!-- Sticky Navbar -->
@@ -86,25 +90,28 @@
                     </div>
                     <div class="col"></div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="allWatches" onclick='filter("all")'>ALL WATCHES</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="allWatches" onclick='filter("all")'>ALL WATCHES</h5>
                     </div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="automaticWatches" onclick='filter("automatic")'>AUTOMATIC</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="automaticWatches" onclick='filter("automatic")'>AUTOMATIC</h5>
                     </div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="handwindWatches" onclick='filter("handwind")'>HANDWIND</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="handwindWatches" onclick='filter("handwind")'>HANDWIND</h5>
                     </div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="quartzWatches" onclick='filter("quartz")'>QUARTZ</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="quartzWatches" onclick='filter("quartz")'>QUARTZ</h5>
                     </div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="vintageWatches" onclick='filter("vintage")'>VINTAGE</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="vintageWatches" onclick='filter("vintage")'>VINTAGE</h5>
                     </div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="modernWatches" onclick='filter("modern")'>MODERN</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="modernWatches" onclick='filter("modern")'>MODERN</h5>
                     </div>
                     <div class="col-1 d-flex">
-                        <h5 class="navbar mx-auto navlink" id="watchParts" onclick='filter("parts")'>PARTS</h5>
+                        <h5 class="navbar mx-auto sticky-navlink" id="watchParts" onclick='filter("parts")'>PARTS</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto"><a href="custom.html" style="color: black">CUSTOM</a></h5>
                     </div>
                     <div class="col"></div>
                 </nav>
@@ -120,14 +127,12 @@
     loadProducts();
 
     $(document).ready(function() {
+        $('#sticky-navbar').hide();
         $(window).scroll(function() { 
-            console.log($(window).scrollTop());
-
             if ($(window).scrollTop() > 290) {
                 $('#sticky-navbar').addClass("sticky-navbar");
                 $('#sticky-navbar').show();
             }
-
             if ($(window).scrollTop() < 290) {
                 $('#sticky-navbar').removeClass("sticky-navbar");
                 $('#sticky-navbar').hide();
