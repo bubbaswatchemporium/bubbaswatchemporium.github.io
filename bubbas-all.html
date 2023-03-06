@@ -40,41 +40,76 @@
     <body id="body">
         <!-- Content -->
         <div class="container-fluid content">
-            <!-- Logo -->
-            <div class="row logo-container">
-                <div class="col"></div>
-                <div class="col-6 d-flex">
-                    <img class="main-logo mx-auto" src="images/bubbas-logo.png">
+            <!-- Header -->
+            <div class="header">
+                <!-- Logo -->
+                <div class="row logo-container">
+                    <div class="col"></div>
+                    <div class="col-6 d-flex">
+                        <img class="main-logo mx-auto" src="images/bubbas-logo.png">
+                    </div>
+                    <div class="col"></div>
                 </div>
-                <div class="col"></div>
+                <!-- Navbar -->
+                <nav class="row">
+                    <div class="col"></div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="allWatches" onclick='filter("all")'>ALL WATCHES</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="automaticWatches" onclick='filter("automatic")'>AUTOMATIC</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="handwindWatches" onclick='filter("handwind")'>HANDWIND</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="quartzWatches" onclick='filter("quartz")'>QUARTZ</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="vintageWatches" onclick='filter("vintage")'>VINTAGE</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="modernWatches" onclick='filter("modern")'>MODERN</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="watchParts" onclick='filter("parts")'>PARTS</h5>
+                    </div>
+                    <div class="col"></div>
+                </nav>
+                <!-- Sticky Navbar -->
+                <nav class="row" id="sticky-navbar">
+                    <div class="col"></div>
+                    <div class="col">
+                        <div class="small-logo-parent d-flex">
+                            <img class="small-logo mx-auto" src="images/bubbas-logo-small.png">
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="allWatches" onclick='filter("all")'>ALL WATCHES</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="automaticWatches" onclick='filter("automatic")'>AUTOMATIC</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="handwindWatches" onclick='filter("handwind")'>HANDWIND</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="quartzWatches" onclick='filter("quartz")'>QUARTZ</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="vintageWatches" onclick='filter("vintage")'>VINTAGE</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="modernWatches" onclick='filter("modern")'>MODERN</h5>
+                    </div>
+                    <div class="col-1 d-flex">
+                        <h5 class="navbar mx-auto navlink" id="watchParts" onclick='filter("parts")'>PARTS</h5>
+                    </div>
+                    <div class="col"></div>
+                </nav>
+                <hr>
             </div>
-            <!-- Navbar -->
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="allWatches" onclick='filter("all")'>ALL WATCHES</h5>
-                </div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="automaticWatches" onclick='filter("automatic")'>AUTOMATIC</h5>
-                </div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="handwindWatches" onclick='filter("handwind")'>HANDWIND</h5>
-                </div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="quartzWatches" onclick='filter("quartz")'>QUARTZ</h5>
-                </div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="vintageWatches" onclick='filter("vintage")'>VINTAGE</h5>
-                </div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="modernWatches" onclick='filter("modern")'>MODERN</h5>
-                </div>
-                <div class="col-1 d-flex">
-                    <h5 class="navbar mx-auto navlink" id="watchParts" onclick='filter("parts")'>PARTS</h5>
-                </div>
-                <div class="col"></div>
-            </div>
-            <hr>
             <!-- Products -->
             <div class="products"></div>
         </div>
@@ -83,4 +118,20 @@
 <!-- Scripts -->
 <script>
     loadProducts();
+
+    $(document).ready(function() {
+        $(window).scroll(function() { 
+            console.log($(window).scrollTop());
+
+            if ($(window).scrollTop() > 290) {
+                $('#sticky-navbar').addClass("sticky-navbar");
+                $('#sticky-navbar').show();
+            }
+
+            if ($(window).scrollTop() < 290) {
+                $('#sticky-navbar').removeClass("sticky-navbar");
+                $('#sticky-navbar').hide();
+            }
+        });
+    });
 </script>
