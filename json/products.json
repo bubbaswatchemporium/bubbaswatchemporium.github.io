@@ -8,7 +8,9 @@
             "size": "38mm",
             "price": "$-",
             "thumbnail": "images/hamilton-khaki-field-front-cropped.png",
-            "age": "Modern"
+            "image": "",
+            "age": "Modern",
+            "metadata": "hamilton-khaki-field-automatic"
         },
         {
             "id": 2,
@@ -18,7 +20,9 @@
             "size": "39mm",
             "price": "$-",
             "thumbnail": "images/dan-henry-1962-front-cropped.png",
-            "age": "Modern"
+            "image": "",
+            "age": "Modern",
+            "metadata": "dan-henry-1962-mechaquartz"
         },
         {
             "id": 3,
@@ -28,7 +32,9 @@
             "size": "38mm",
             "price": "$-",
             "thumbnail": "images/seiko-asymmsetrical-front-cropped.png",
-            "age": "Vintage"
+            "image": "",
+            "age": "Vintage",
+            "metadata": "seiko-asymmetrical-quartz"
         },
         {
             "id": 4,
@@ -38,7 +44,9 @@
             "size": "39mm",
             "price": "$-",
             "thumbnail": "images/buler-astromaster-front-cropped.png",
-            "age": "Vintage"
+            "image": "",
+            "age": "Vintage",
+            "metadata": "buler-astromaster-handwind"
         },
         {
             "id": 5,
@@ -48,7 +56,9 @@
             "size": "38mm",
             "price": "$-",
             "thumbnail": "images/longines-conquest-front-cropped.png",
-            "age": "Vintage"
+            "image": "",
+            "age": "Vintage",
+            "metadata": "longines-conquest-quartz"
         },
         {
             "id": 6,
@@ -57,8 +67,10 @@
             "movement": "Automatic",
             "size": "37mm",
             "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
+            "thumbnail": "images/seiko-snxa09-front-cropped.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "seiko-snxa09-automatic"
         },
         {
             "id": 7,
@@ -67,78 +79,106 @@
             "movement": "Handwind",
             "size": "-mm",
             "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
+            "thumbnail": "images/le-monde-lolipop-front-cropped.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "le-monde-lolipop-handwind"
         },
         {
             "id": 8,
-            "brand": "Omega",
-            "model": "\"Pre-Bond\" Seamaster 200m (396.1061)",
-            "movement": "Quartz",
-            "size": "40mm",
-            "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
-        },
-        {
-            "id": 9,
-            "brand": "Bulova",
-            "model": "American Clipper",
-            "movement": "Automatic",
-            "size": "-mm",
-            "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
-        },
-        {
-            "id": 10,
-            "brand": "Tag Heuer",
-            "model": "Professional 2000 (974.006)",
-            "movement": "Quartz",
-            "size": "38mm",
-            "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
-        },
-        {
-            "id": 11,
             "brand": "Seiko",
             "model": "SKXW26 (7S26-3200)",
             "movement": "Automatic",
             "size": "37mm",
             "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
+            "thumbnail": "images/seiko-skxw26-front-cropped.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "seiko-skxw26-automatic"
+        },
+        {
+            "id": 9,
+            "brand": "Raymond Weil",
+            "model": "Tank",
+            "movement": "Quartz",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "images/raymond-weil-tank-front-cropped.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "raymond-weil-tank-quartz"
+        },
+        {
+            "id": 10,
+            "brand": "Omega",
+            "model": "\"Pre-Bond\" Seamaster 200m (396.1061)",
+            "movement": "Quartz",
+            "size": "40mm",
+            "price": "$-",
+            "thumbnail": "images/watch-sillouette.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "omega-seamaster-200-quartz"
+        },
+        {
+            "id": 11,
+            "brand": "Bulova",
+            "model": "American Clipper",
+            "movement": "Automatic",
+            "size": "-mm",
+            "price": "$-",
+            "thumbnail": "images/watch-sillouette.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "bulova-american-clipper-automatic"
         },
         {
             "id": 12,
+            "brand": "Tag Heuer",
+            "model": "Professional 2000 (974.006)",
+            "movement": "Quartz",
+            "size": "38mm",
+            "price": "$-",
+            "thumbnail": "images/watch-sillouette.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "tag-heuer-2000-quartz"
+        },
+        {
+            "id": 13,
             "brand": "Nivada Grenchen",
             "model": "F2",
             "movement": "Handwind",
             "size": "-mm",
             "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
+            "thumbnail": "images/watch-sillouette.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "nivada-grenchen-f2-handwind"
         },
         {
-            "id": 13,
+            "id": 14,
             "brand": "Rado",
             "model": "Diastar",
             "movement": "Automatic",
             "size": "-mm",
             "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
+            "thumbnail": "images/watch-sillouette.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "rado-diastar-automatic"
         },
         {
-            "id": 14,
+            "id": 15,
             "brand": "Bulova",
             "model": "Watertite",
             "movement": "Handwind",
             "size": "-mm",
             "price": "$-",
-            "thumbnail": "",
-            "age": "Vintage"
+            "thumbnail": "images/watch-sillouette.png",
+            "image": "",
+            "age": "Vintage",
+            "metadata": "bulova-watertite-handwind"
         }
     ]
 }

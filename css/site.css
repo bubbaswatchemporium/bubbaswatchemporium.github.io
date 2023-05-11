@@ -36,6 +36,7 @@ a {
     background: url(/images/big-image-example.jpg) no-repeat center;
 }
 .main-logo {
+    cursor: pointer;
     max-width: 40%;
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -85,30 +86,4 @@ a {
 .content {
     font-family: "HanleyProSans";
     text-align: center;
-}
-.products {
-    z-index: 50;
-    background-color: white;
-}
-.product {
-    padding: 1rem;
-}
-.product:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-.product-img {
-    max-width: 20vw !important;
-}
-.product-name {
-    font-family: "HanleyProSlimBold";
-    font-size: 1vw;
-    padding-top: 1rem;
-}
-.brand-name {
-    font-family: "HanleyProSans";
-    padding-top: 1rem;
-}
-.price {
-    text-decoration: none !important;
 }

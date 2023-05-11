@@ -5,9 +5,9 @@ function loadProducts() {
     var row = createRow(products);
     
     $.ajax({
-        url: './json/products.json',
-        method: 'GET',
-        dataType: 'json',
+        url: "./json/products.json",
+        method: "GET",
+        dataType: "json",
         success: function(data){
             $.each(data.products, function(i, item){
                 template.content.querySelector("img").src = item["thumbnail"];
@@ -16,64 +16,68 @@ function loadProducts() {
                 template.content.querySelector("#movement").textContent = item["movement"];
                 template.content.querySelector("#size").textContent = item["size"];
                 template.content.querySelector("#price").textContent = item["price"];
+                template.content.querySelector(".top-level").id = item["metadata"];
                 
                 var clone = document.importNode(template.content, true);
 
                 // brand identification
                 if (item["brand"] == "Hamilton") {
-                   clone.querySelector("#topLevel").classList.add("hamilton");
+                   clone.querySelector(".top-level").classList.add("hamilton");
                 }
                 else if (item["brand"] == "Dan Henry") {
-                    clone.querySelector("#topLevel").classList.add("dan-henry");
+                    clone.querySelector(".top-level").classList.add("dan-henry");
                 }
                 else if (item["brand"] == "Seiko") {
-                    clone.querySelector("#topLevel").classList.add("seiko");
+                    clone.querySelector(".top-level").classList.add("seiko");
                 }
                 else if (item["brand"] == "Buler") {
-                    clone.querySelector("#topLevel").classList.add("buler");
+                    clone.querySelector(".top-level").classList.add("buler");
                 }
                 else if (item["brand"] == "Longines") {
-                    clone.querySelector("#topLevel").classList.add("longines");
+                    clone.querySelector(".top-level").classList.add("longines");
                 }
                 else if (item["brand"] == "Le Monde") {
-                    clone.querySelector("#topLevel").classList.add("le-monde");
+                    clone.querySelector(".top-level").classList.add("le-monde");
                 }
                 else if (item["brand"] == "Omega") {
-                    clone.querySelector("#topLevel").classList.add("omega");
+                    clone.querySelector(".top-level").classList.add("omega");
                 }
                 else if (item["brand"] == "Bulova") {
-                    clone.querySelector("#topLevel").classList.add("bulova");
+                    clone.querySelector(".top-level").classList.add("bulova");
                 }
                 else if (item["brand"] == "Tag Heuer") {
-                    clone.querySelector("#topLevel").classList.add("tag-heuer");
+                    clone.querySelector(".top-level").classList.add("tag-heuer");
                 }
                 else if (item["brand"] == "Nivada Grenchen") {
-                    clone.querySelector("#topLevel").classList.add("nivada-grenchen");
+                    clone.querySelector(".top-level").classList.add("nivada-grenchen");
                 }
                 else if (item["brand"] == "Rado") {
-                    clone.querySelector("#topLevel").classList.add("rado");
+                    clone.querySelector(".top-level").classList.add("rado");
+                }
+                else if (item["brand"] == "Raymond Weil") {
+                    clone.querySelector(".top-level").classList.add("raymond-weil");
                 }
 
                 // movement type identification
                 if (item["movement"] == "Automatic") {
-                    clone.querySelector("#topLevel").classList.add("automatic");
+                    clone.querySelector(".top-level").classList.add("automatic");
                 }
                 else if (item["movement"] == "Handwind") {
-                    clone.querySelector("#topLevel").classList.add("handwind");
+                    clone.querySelector(".top-level").classList.add("handwind");
                 }
                 else if (item["movement"] == "Mechaquartz") {
-                    clone.querySelector("#topLevel").classList.add("mechaquartz");
+                    clone.querySelector(".top-level").classList.add("mechaquartz");
                 }
                 else if (item["movement"] == "Quartz") {
-                    clone.querySelector("#topLevel").classList.add("quartz");
+                    clone.querySelector(".top-level").classList.add("quartz");
                 }
 
                 // age identification
                 if (item["age"] == "Modern") {
-                    clone.querySelector("#topLevel").classList.add("modern");
+                    clone.querySelector(".top-level").classList.add("modern");
                 }
                 else if (item["age"] == "Vintage") {
-                    clone.querySelector("#topLevel").classList.add("vintage");
+                    clone.querySelector(".top-level").classList.add("vintage");
                 }
                 row.appendChild(clone);
                 count++;
@@ -166,4 +170,9 @@ function resetFilter(products) {
     document.querySelector("#modernWatches").style.textDecoration = "none";
     document.querySelector("#watchParts").style.textDecoration = "none";
     window.scrollTo(0, 0);
+}
+
+function toProductInfo(id) {
+    const url = "product-info.html?product=" + id;
+    window.location.href = url;
 }
