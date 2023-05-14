@@ -1,0 +1,29 @@
+/* Styling */
+.spacer {
+    padding-top: 3vw;
+}
+.product-img {
+    max-width: 40vw !important;
+}
+.brand {
+    font-size: 2vw;
+    text-align: left;
+}
+.model {
+    font-size: 3vw;
+    text-align: left;
+    margin-top: -1vw !important;
+}
+.flavour {
+    margin-top: -1vw !important;
+}
+.price {
+    font-size: 2vw;
+    text-align: left;
+}
+.detail {
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+

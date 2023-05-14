@@ -16,8 +16,10 @@ function loadProductInfo() {
                     template.content.querySelector("img").src = item["thumbnail"];
                     template.content.querySelector("#brand").textContent = item["brand"];
                     template.content.querySelector("#model").textContent = item["model"];
+                    template.content.querySelector("#model-flavour").textContent = item["model-flavour"];
                     template.content.querySelector("#movement").textContent = item["movement"];
                     template.content.querySelector("#size").textContent = item["size"];
+                    template.content.querySelector("#price").textContent = item["price"];
 
                     var clone = document.importNode(template.content, true);
                     row.appendChild(clone);
